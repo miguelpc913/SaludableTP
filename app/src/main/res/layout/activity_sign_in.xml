@@ -1,0 +1,167 @@
+
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        tools:context=".SignInActivity"
+        android:padding="8dp"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Bienvenido, para crear una nueva cuenta por favor llena el formulario:"
+                android:textAlignment="center"
+                android:textSize="24sp"
+                android:textColor="@color/black"
+                ></TextView>
+
+            <EditText
+                android:id="@+id/SignInNombre"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:ems="10"
+                android:hint="Ingrese Nombre"
+                android:inputType="textPersonName" />
+            <EditText
+                android:id="@+id/SignInApellido"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:ems="10"
+                android:hint="Ingrese Apellido"
+                android:inputType="textPersonName" />
+
+            <EditText
+                android:id="@+id/SignInDNI"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:layout_marginTop="20dp"
+                android:hint="Ingrese DNI"
+                android:inputType="number" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:labelFor="@+id/SignInGeneroGroup"
+                android:layout_marginTop="20dp"
+                android:text="Genero:"></TextView>
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" />
+            </ScrollView>
+
+            <RadioGroup
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:id="@+id/SignInGeneroGroup"
+                >
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Hombre"
+                    android:layout_marginRight="10dp"
+                    android:id="@+id/SignInHombre"></RadioButton>
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Mujer"
+                    android:layout_marginRight="10dp"
+                    android:id="@+id/SignInMujer"></RadioButton>
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Otro"
+                    android:id="@+id/SignInOtro"></RadioButton>
+            </RadioGroup>
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:layout_marginTop="20dp"
+                android:text=""
+                android:hint="Fecha"
+                android:clickable="false"
+                android:id="@+id/SignInDate"
+                ></EditText>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Elige tu fecha de nacimiento"
+                android:id="@+id/SignInDatePicker"></Button>
+
+            <EditText
+                android:id="@+id/SignInLocalidad"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:layout_marginTop="20dp"
+                android:hint="Ingresa tu localidad"
+                android:inputType="text" />
+            <EditText
+                android:id="@+id/SignInUsuario"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:layout_marginTop="20dp"
+                android:hint="Ingresa tu usuario"
+                android:inputType="text" />
+            <EditText
+                android:id="@+id/SignInPassword"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:layout_marginTop="20dp"
+                android:hint="Ingresa tu contraseña"
+                android:inputType="textPassword" />
+
+            <RadioGroup
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:id="@+id/SignInTratamientoGroup">
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Anorexia"
+                    android:layout_marginRight="10dp"
+                    android:id="@+id/SignInAnorexia"></RadioButton>
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Bulimia"
+                    android:layout_marginRight="10dp"
+                    android:id="@+id/SignInBulimia"></RadioButton>
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Obesidad"
+                    android:id="@+id/SignInObesidad"></RadioButton>
+            </RadioGroup>
+
+            <Button
+                android:id="@+id/CrearCuenta"
+                android:layout_width="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_height="wrap_content"
+                android:text="Crear cuenta" />
+
+        </LinearLayout>
+    </ScrollView>
+

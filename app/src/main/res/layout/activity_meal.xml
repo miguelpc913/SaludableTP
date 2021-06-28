@@ -1,0 +1,157 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    tools:context=".SignInActivity"
+    android:padding="8dp"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:padding="8dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hola! Para poder reportar tu nutricion necesitaremos que complete el formulario:"
+            android:textAlignment="center"
+            android:textSize="24sp"
+            android:textColor="@color/black"
+            ></TextView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:labelFor="@+id/MealType"
+            android:layout_marginTop="20dp"
+            android:text="Que comida tuviste?"></TextView>
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:id="@+id/MealTypeGroup"
+            >
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Desayuno"
+                android:layout_marginRight="10dp"
+                android:id="@+id/MealDesayuno"></RadioButton>
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Almuerzo"
+                android:layout_marginRight="10dp"
+                android:id="@+id/MealAlmuerzo"></RadioButton>
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Merienda"
+                android:id="@+id/MealMerienda"></RadioButton>
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Cena"
+                android:id="@+id/MealCena"></RadioButton>
+        </RadioGroup>
+
+
+        <EditText
+            android:id="@+id/MealPlatoPrincipal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:ems="10"
+            android:hint="Comida principal" />
+        <EditText
+            android:id="@+id/MealPlatoSecundario"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:ems="10"
+            android:hint="Plato secundario" />
+
+        <EditText
+            android:id="@+id/MealBebida"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:ems="10"
+            android:hint="Bebida" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/PostreLayoutOptions"
+            android:orientation="vertical">
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:labelFor="@+id/MealHambreGroup"
+            android:layout_marginTop="20dp"
+            android:text="Tenia intentacion de ingerir otro alimento?"></TextView>
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:id="@+id/TentacionGroup">
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Si"
+                android:layout_marginRight="10dp"
+                android:id="@+id/TentacionSi"></RadioButton>
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="No"
+                android:layout_marginRight="10dp"
+                android:id="@+id/TentacionNo"></RadioButton>
+        </RadioGroup>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/TentacionTextoContainer"
+            android:orientation="vertical"
+            ></LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:labelFor="@+id/MealHambreGroup"
+            android:layout_marginTop="20dp"
+            android:text="Quedo hambriento?"></TextView>
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:id="@+id/MealHambreGroup">
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Si"
+                android:layout_marginRight="10dp"
+                android:id="@+id/MealHambreSi"></RadioButton>
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="No"
+                android:layout_marginRight="10dp"
+                android:id="@+id/MealHambreNo"></RadioButton>
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/MealSubmitInfo"
+            android:layout_width="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_height="wrap_content"
+            android:text="Listo" />
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "567153788133",
+    "project_id": "istea-saludable",
+    "storage_bucket": "istea-saludable.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:567153788133:android:66593c045c9b1f9021400c",
+        "android_client_info": {
+          "package_name": "com.istea.saludabletpfinal"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "567153788133-rdhj2otov5a64vbi53m72smj7e0q336o.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyChp1FmKkwIziCXzUnUaVcT27YVdNRAQNI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "567153788133-rdhj2otov5a64vbi53m72smj7e0q336o.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
