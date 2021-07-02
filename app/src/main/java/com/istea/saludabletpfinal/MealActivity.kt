@@ -25,6 +25,11 @@ class MealActivity : AppCompatActivity() {
     private lateinit var paciente: Paciente;
     private lateinit var database: DatabaseReference
 
+    override fun onAttachedToWindow() {
+        super.onAttachedToWindow()
+        MyApplication.setContext(this)
+    }
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         val binding = ActivityMealBinding.inflate(layoutInflater);

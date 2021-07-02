@@ -16,11 +16,16 @@ import java.util.*
 
 class SignInActivity : AppCompatActivity() {
     private lateinit var database: DatabaseReference
+
+    override fun onAttachedToWindow() {
+        super.onAttachedToWindow()
+        MyApplication.setContext(this)
+    }
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         val binding = ActivitySignInBinding.inflate(layoutInflater);
         setContentView(binding.root);
-        MyApplication.setContext(this)
         binding.SignInDatePicker.setOnClickListener{
             clickDatePicker(binding)
         }

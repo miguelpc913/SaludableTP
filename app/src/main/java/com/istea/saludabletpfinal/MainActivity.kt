@@ -29,11 +29,15 @@ import kotlin.system.exitProcess
 class MainActivity : AppCompatActivity() {
     private lateinit var database: DatabaseReference
 
+    override fun onResume() {
+        super.onResume()
+        MyApplication.setContext(this)
+    }
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         val binding = ActivityMainBinding.inflate(layoutInflater);
         setContentView(binding.root);
-
         MyApplication.setContext(this)
         MyApplication.checkForInternetConnectivity()
         if (!MyApplication.listening) {
